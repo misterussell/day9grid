@@ -1,0 +1,9 @@
+.social_media {
+  // float: right;
+  display: block;
+  @include clearfix;
+  li {
+    display: inline-block;
+
+  }
+}

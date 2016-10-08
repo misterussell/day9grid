@@ -1,0 +1,17 @@
+body {
+  @include outer-container;
+  // width: 100%;
+  // padding: 1rem;
+  // background-image: url("assets/bg.jpg");
+  background-image: url("bg.jpg");
+  font-family: 'Roboto Condensed', helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+ul {
+  @include list-collapse;
+}
+
+img {
+  width: 100%;
+}
