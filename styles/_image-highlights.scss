@@ -15,6 +15,9 @@
     font-size: 4.5rem;
     font-weight: 600;
   }
+  a {
+    @include clearfix;
+  }
   a:hover h4 {
     color: $color-hover;
   }
@@ -33,5 +36,46 @@
   li {
     @include span-columns(2 of 10);
     @include omega(5n);
+  }
+}
+
+@media (min-width: $flex-width) {
+  .image-highlights {
+    @include outer-container;
+  }
+  .imagehl {
+    h4 {
+      font-size: 2rem;
+    }
+    @include span-columns(4);
+    @include omega(3n);
+    height: 10rem;
+    overflow: hidden;
+  }
+  .image-standard img {
+    width: 150%;
+  }
+  .imagehl.image-vertical {
+    height: 21rem;
+    display: inline-block;
+    position: relative;
+    float: right;
+    img {
+      width: 275%;
+      position: absolute;
+      left: -19rem;
+      bottom: 0;
+    }
+  }
+  .image-horizontal {
+    @include span-columns(8);
+    clear: right;
+    height: 10rem;
+    position: relative;
+      img {
+        position: absolute;
+        left: 0rem;
+        bottom: -1rem;
+      }
   }
 }

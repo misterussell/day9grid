@@ -1,11 +1,14 @@
 .hero-slider {
   position: relative;
   @include border-white;
+  @include clearfix;
+  // height: 7rem;
   li {
     @include clearfix;
   }
   li img {
     float: left;
+    overflow: hidden;
   }
   .logo {
     position: absolute;
@@ -13,4 +16,11 @@
     bottom: 1rem;
     width: 45%;
     }
+  .grid-overlay {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    float: left;
   }
+}

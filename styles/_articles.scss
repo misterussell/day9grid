@@ -3,12 +3,29 @@
   @include article-linx;
   background: white;
   margin: .5rem 0;
-  padding: 1rem;
+  padding: .5rem;
   font-size: 1.5rem;
   h2 {
-    margin: .5rem 0;
+    margin: 0;
+    padding: 0;
   }
   .date {
     color: #a1a1a1;
+  }
+}
+
+@media (min-width: $flex-width) {
+  .highlight {
+    @include span-columns(4);
+    @include omega(3n);
+    font-size: .5rem;
+    // height: 20rem;
+    padding: 0 .5rem;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+
+    }
   }
 }

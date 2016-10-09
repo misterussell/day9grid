@@ -1,22 +1,31 @@
 .main-menu {
   text-align: center;
-  margin: 1rem auto;
-  font-size: 1rem;
+  // margin: 1rem auto;
+  // font-size: 1rem;
   font-weight: lighter;
+  @include outer-container;
   ul {
+    @include clearfix;
   }
-  li {
+  .menu-option {
     @include shadow;
     text-align: center;
-    display: inline-block;
+    // display: inline-block;
     background: #B4292E;
-    width: 15rem;
+    // @include span-columns(4);
+    // @include omega(4n);
+    // width: 15rem;
     padding: .5rem 0;
-    margin: 0.2rem 0;
-    transition: all .3s;
+    // margin: 0.2rem 0;
+    // transition: all .3s;
   }
   a {
     color: white;
+    @include clearfix;
+    @include span-columns(3);
+    @include omega(4n);
+    padding: .5rem 0;
+
   }
   // .menu-option {
   //   opacity: 0;
@@ -30,6 +39,15 @@
 
 @media (min-width: $flex-width) {
   .main-menu {
+    ul {
+    // @include outer-container;
+    @include clearfix;
+    }
+    // .menu-option {
+    //   @include span-columns(3);
+    //   @include omega(4n);
+    //   // display: block;
+    // }
   }
 }
 
