@@ -1,9 +1,12 @@
 @import "var-mixins";
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import "https://fonts.googleapis.com/css?family=Roboto+Condensed";
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700";
 @import "baseline";
 @import "social";
 @import "header";
+@import "hero";
+@import "articles";
+@import "image-highlights";
 @import "footer";
 @import "navs";

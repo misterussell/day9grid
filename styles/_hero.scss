@@ -1,0 +1,11 @@
+.hero-slider {
+  position: relative;
+  @include border-white;
+
+  .logo {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    width: 45%;
+  }
+}

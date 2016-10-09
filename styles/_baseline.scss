@@ -1,7 +1,7 @@
 body {
   @include outer-container;
   // width: 100%;
-  // padding: 1rem;
+  margin: 1rem;
   // background-image: url("assets/bg.jpg");
   background-image: url("bg.jpg");
   font-family: 'Roboto Condensed', helvetica, sans-serif;

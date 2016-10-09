@@ -1,0 +1,32 @@
+.imagehl {
+  @include border-white;
+  position: relative;
+  text-align: center;
+  margin: .5rem 0;
+  h4 {
+    position: absolute;
+    // max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: $color-imageh1-text;
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+  a:hover h4 {
+    color: $color-hover;
+  }
+}
+
+.board-block {
+  background: white;
+  ul {
+    @include clearfix;
+    // @include outer-container;
+  }
+  li {
+    @include span-columns(2 of 10);
+    @include omega(5n);
+  }
+}
