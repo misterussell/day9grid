@@ -51,19 +51,24 @@
     @include omega(3n);
     height: 10rem;
     overflow: hidden;
+    position: relative;
   }
   .image-standard img {
-    width: 150%;
+    width: 140%;
+  }
+  .image-standard.lance img {
+    position: absolute;
+    bottom: 0;
+    left: -5rem;
   }
   .imagehl.image-vertical {
     height: 21rem;
     display: inline-block;
-    position: relative;
     float: right;
     img {
       width: 275%;
       position: absolute;
-      left: -19rem;
+      left: -19vw;
       bottom: 0;
     }
   }
@@ -71,7 +76,6 @@
     @include span-columns(8);
     clear: right;
     height: 10rem;
-    position: relative;
       img {
         position: absolute;
         left: 0rem;

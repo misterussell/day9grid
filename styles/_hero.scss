@@ -2,13 +2,13 @@
   position: relative;
   @include border-white;
   @include clearfix;
+  overflow: hidden;
   // height: 7rem;
   li {
     @include clearfix;
   }
   li img {
     float: left;
-    overflow: hidden;
   }
   .logo {
     position: absolute;
@@ -20,7 +20,25 @@
     position: absolute;
     left: 0;
     bottom: -3px;
-    width: 100%;
+    width: 150%;
     float: left;
+    opacity: .25;
+  }
+}
+
+@media (min-width: $flex-width) {
+  .hero-slider {
+    height: 15rem;
+    li img {
+      width: 150%;
+      position: absolute;
+      left: -7rem;
+      top: -7rem;
+    }
+    .logo {
+      top: 15%;
+      left: 1rem;
+      width: 40%
+    }
   }
 }
