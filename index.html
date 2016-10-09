@@ -11,7 +11,7 @@
   <body>
     <!-- background inmage = bg.jpg  -->
     <aside class="social_media">
-      Subscribe
+      <h5>Subscribe</h5>
       <ul>
         <a href="#">
           <li class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></li>
@@ -29,7 +29,7 @@
     </aside>
     <nav class="main-menu">
         <ul>
-          <li>NAVIGATION</li>
+          <!-- <li>NAVIGATION</li> -->
           <a href="#"><li class="menu-option">SK8 NEWS</li></a>
           <a href="#"><li class="menu-option">SKATEBOARDS</li></a>
           <a href="#"><li class="menu-option">BOARD DESIGN</li></a>
@@ -37,17 +37,17 @@
         </ul>
     </nav>
     <header class="hero-slider">
-      <ul>
-        <li><img src="assets/top-image.png" class="slide"alt="" /></li>
-        <!-- <li><img src="" class="slide"alt="" /></li>
-        <li><img src="" class="slide"alt="" /></li>
-        <li><img src="" class="slide"alt="" /></li> -->
+      <ul><li><img src="assets/top-image.png" class="slide"alt="" /></li></ul>
         <!-- radio buttons will go here for image slides -->
-      </ul>
         <div class="logo">
           <img src="assets/peralta-logo.png" alt="" />
         </div>
     </header>
+    <div class="radio-selectors">
+      <input type="radio" name="name" value="">
+      <input type="radio" name="name" value="">
+      <input type="radio" name="name" value="">
+    </div>
     <article class="highlight">
       <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
       <span class="date">October 10, 2013</span>
@@ -73,7 +73,7 @@
       <a href="#">[ READMORE ]</a>
     </article>
     <article class="highlight">
-      <h2>Ray BarbeeT Talks 'Ban This'</h2>
+      <h2>Ray Barbee Talks 'Ban This'</h2>
       <span class="date">October 10, 2013</span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -119,29 +119,31 @@
       </ul>
     </aside>
     <footer class="contact">
-      <ul>
-        <a href="#">
-          <li class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-        </a>
-        <a href="#">
-          <li class="rss"><i class="fa fa-rss" aria-hidden="true"></i></li>
-        </a>
-        <a href="#">
-          <li class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-        </a>
-        <a href="#">
-          <li class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></li>
-        </a>
-      </ul>
-      <h3>Contact Us for More Information</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div class="contact-debrief">
+        <ul>
+          <a href="#">
+            <li class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          </a>
+          <a href="#">
+            <li class="rss"><i class="fa fa-rss" aria-hidden="true"></i></li>
+          </a>
+          <a href="#">
+            <li class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          </a>
+          <a href="#">
+            <li class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></li>
+          </a>
+        </ul>
+        <h3>Contact Us for More Information</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
       <div class="contact-form">
-        <form class="" action="index.html" method="post">
-          <input type="textbox" name="name" value="" label="NAME">
-          <input type="email" name="email" value="" label="EMAIL">
-          <input type="message" name="message" value="" label="YOUR MESSAGE">
+        <form class="contact-us" action="index.html" method="post">
+          <input type="textbox" name="name" value="NAME" label="NAME" class="contact-name">
+          <input type="email" name="email" value="EMAIL" label="EMAIL" class="contact-email">
+          <input type="message" name="message" value="YOUR MESSAGE" label="YOUR MESSAGE" class="contact-message">
           <button type="button" name="button">SUBMIT</button>
         </form>
       </div>

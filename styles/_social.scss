@@ -1,9 +1,56 @@
 .social_media {
   // float: right;
-  display: block;
   @include clearfix;
+  display: block;
+  color: $color-imageh1-text;
+  font-size: 1rem;
+  text-align: center;
+  h5 {
+    @include shadow;
+    font-weight: lighter;
+    position: relative;
+    margin: 0 auto;
+    padding: .25rem 0;
+    }
+  h5::after {
+    position: absolute;
+    content: "";
+    width: .1rem;
+    height: .1rem;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 4rem;
+    transform: translate(-50%);
+  }
   li {
+    @include under-border;
     display: inline-block;
-
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  i {
+    @include shadow;
+    font-size: 1.25rem;
+    color: $color-imageh1-text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+  }
+  .fb {
+    background: $color-fb
+  }
+  .rss {
+    background: $color-rss;
+  }
+  .twitter {
+    background: $color-twitter;
+  }
+  .youtube {
+    background: $color-youtube;
   }
 }

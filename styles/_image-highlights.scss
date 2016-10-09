@@ -1,5 +1,6 @@
 .imagehl {
   @include border-white;
+  @include clearfix;
   position: relative;
   text-align: center;
   margin: .5rem 0;
@@ -17,10 +18,14 @@
   a:hover h4 {
     color: $color-hover;
   }
+  img {
+    float: left;
+  }
 }
 
 .board-block {
   background: white;
+  padding: .5rem;
   ul {
     @include clearfix;
     // @include outer-container;

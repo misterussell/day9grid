@@ -1,11 +1,26 @@
 body {
   @include outer-container;
   // width: 100%;
-  margin: 1rem;
+  margin: 1.5rem;
   // background-image: url("assets/bg.jpg");
   background-image: url("bg.jpg");
   font-family: 'Roboto Condensed', helvetica, sans-serif;
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media (min-width: $flex-width) {
+  body {
+    margin: 1rem 20% 2rem 20%;
+  }
+}
+
+p {
+  color: #747474;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {

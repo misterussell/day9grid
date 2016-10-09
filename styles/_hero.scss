@@ -1,11 +1,16 @@
 .hero-slider {
   position: relative;
   @include border-white;
-
+  li {
+    @include clearfix;
+  }
+  li img {
+    float: left;
+  }
   .logo {
     position: absolute;
     left: 1rem;
     bottom: 1rem;
     width: 45%;
+    }
   }
-}

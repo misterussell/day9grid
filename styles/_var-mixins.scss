@@ -3,6 +3,13 @@ $color-article-p: #747474;
 $color-article-date: #b4b4b4;
 $color-imageh1-text: white;
 $color-hover: #f7a519;
+$color-fb: #445897;
+$color-rss: #CB8F32;
+$color-twitter: #6A8DC7;
+$color-youtube: #B1372C;
+$color-shadow: black;
+$flex-width: 810px;
+
 @mixin list-collapse {
   list-style: none;
   margin: 0 auto;
@@ -30,4 +37,15 @@ $color-hover: #f7a519;
       color: $color-article-link;
     }
   }
+}
+
+@mixin under-border {
+  &::after {
+
+  }
+}
+
+@mixin shadow {
+  text-shadow: 1px 1px 2px $color-shadow;
+
 }

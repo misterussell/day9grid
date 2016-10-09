@@ -1,8 +1,12 @@
 .main-menu {
   text-align: center;
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: lighter;
   ul {
   }
   li {
+    @include shadow;
     text-align: center;
     display: inline-block;
     background: #B4292E;
@@ -22,4 +26,18 @@
   //   opacity: 1;
   // }
 
+}
+
+@media (min-width: $flex-width) {
+  .main-menu {
+  }
+}
+
+.radio-selectors {
+  text-align: center;
+  margin: .5rem auto;
+  input {
+    background: $color-imageh1-text;
+    border: 0;
+  }
 }
