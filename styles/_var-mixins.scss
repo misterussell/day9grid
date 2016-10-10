@@ -7,8 +7,9 @@ $color-fb: #445897;
 $color-rss: #CB8F32;
 $color-twitter: #6A8DC7;
 $color-youtube: #B1372C;
-$color-shadow: black;
+$color-shadow: #282542;
 $flex-width: 810px;
+$border-contact-field: 0.2rem;
 
 @mixin list-collapse {
   list-style: none;
@@ -39,10 +40,8 @@ $flex-width: 810px;
   }
 }
 
-@mixin under-border {
-  &::after {
-
-  }
+@mixin box-border {
+    box-shadow: 0px .175rem 0px 0px rgba(252, 252, 252, 0.35);
 }
 
 @mixin shadow {

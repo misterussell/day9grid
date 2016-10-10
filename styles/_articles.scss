@@ -1,6 +1,7 @@
 .highlight {
   @include border-white;
   @include article-linx;
+  @include box-border;
   background: white;
   margin: .5rem 0;
   padding: .5rem;

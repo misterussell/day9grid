@@ -9,6 +9,7 @@
   }
   .menu-option {
     @include shadow;
+    @include box-border;
     text-align: center;
     // display: inline-block;
     background: #B4292E;

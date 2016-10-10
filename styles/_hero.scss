@@ -3,6 +3,7 @@
   @include border-white;
   @include clearfix;
   overflow: hidden;
+  @include box-border;
   // height: 7rem;
   li {
     @include clearfix;

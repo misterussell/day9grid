@@ -1,6 +1,7 @@
 .imagehl {
   @include border-white;
   @include clearfix;
+  @include box-border;
   position: relative;
   text-align: center;
   margin: .5rem 0;
@@ -29,13 +30,15 @@
 .board-block {
   background: white;
   padding: .5rem;
+  margin: 1em 0;
+  @include box-border;
   ul {
     @include clearfix;
-    // @include outer-container;
+    @include outer-container;
   }
   li {
-    @include span-columns(2 of 10);
-    @include omega(5n);
+    @include span-columns(1 of 10);
+    @include omega(10n);
   }
 }
 
@@ -57,7 +60,7 @@
     width: 140%;
   }
   .image-standard.lance img {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: -5rem;
   }
@@ -67,7 +70,7 @@
     float: right;
     img {
       width: 275%;
-      position: absolute;
+      position: relative;
       left: -19vw;
       bottom: 0;
     }
@@ -77,9 +80,26 @@
     clear: right;
     height: 10rem;
       img {
-        position: absolute;
+        position: relative;
         left: 0rem;
         bottom: -1rem;
       }
   }
+
+  // .board-block {
+  //   background: white;
+  //   // padding: .5rem;
+  //   ul {
+  //     @include clearfix;
+  //     // @include outer-container;
+  //   }
+  //   li {
+  //     display: inline-block;
+  //     float: left;
+  //     width: 10%;
+  //     img {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }

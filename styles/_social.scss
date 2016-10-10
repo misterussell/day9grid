@@ -1,4 +1,4 @@
-.social_media {
+.social-media-header {
   // float: right;
   @include clearfix;
   display: block;
@@ -24,7 +24,7 @@
   //   transform: translate(-50%);
   // }
   li {
-    @include under-border;
+    @include box-border;
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -55,8 +55,13 @@
   }
 }
 
+.greyscale{
+  filter: grayscale(100%);
+}
+
+
 @media (min-width: $flex-width) {
-  .social_media {
+  .social-media-header {
     @include span-columns(12);
   }
 

@@ -2,11 +2,18 @@
   background-color: white;
   padding: 1rem;
   font-size: 1rem;
+  @include box-border;
   .contact-debrief {
     li {
       display: inline-block;
     }
+    h3 {
+      padding: 0;
+      margin: 0 auto;
+      font-weight: lighter;
+    }
   }
+
   .contact-form {
     .contact-message {
       width: 100%;
@@ -14,10 +21,10 @@
     }
     input {
       // border: solid .1rem .1rem .1rem .5rem $color-article-p;
-      border-top: solid .3rem $color-article-date;
+      border-top: solid $border-contact-field $color-article-date;
       border-right: solid .001rem $color-article-date;
       border-bottom: solid .001rem $color-article-date;
-      border-left: solid .3rem $color-article-date;
+      border-left: solid $border-contact-field $color-article-date;
       color: $color-article-date;
       margin: .5rem auto;
     }
