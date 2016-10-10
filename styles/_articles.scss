@@ -20,13 +20,19 @@
     @include span-columns(4);
     @include omega(3n);
     font-size: .5rem;
-    // height: 20rem;
     padding: 0 .5rem;
-
+    .text-block {
+      overflow: hidden;
+      height: 12rem;
+    }
     h2 {
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 300;
+      margin: .75rem 0;
 
+    }
+    p {
+      line-height: 1.5;
     }
   }
 }

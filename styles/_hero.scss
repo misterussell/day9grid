@@ -27,6 +27,13 @@
   }
 }
 
+.radio-selectors {
+  input {
+    @include box-border;
+    border-radius: 50%;
+  }
+}
+
 @media (min-width: $flex-width) {
   .hero-slider {
     height: 15rem;
